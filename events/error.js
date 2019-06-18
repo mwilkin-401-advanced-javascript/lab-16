@@ -6,8 +6,8 @@
  * @file events/error
  */
 
-// const events = require('./event.js');
-require('./event.js');
+const events = require('./event.js');
+// require('./event.js');
 
 /**
 * error log
@@ -23,4 +23,4 @@ function log(event, payload) {
   console.log({event, errorTime, payload});
 }
 
-event.on('error', log);
+events.on('error', log);
