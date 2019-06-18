@@ -14,22 +14,21 @@ Create an event driven “smart app”
 
 * [Travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-16)
 
-* [Swagger]
-
-* [JSDOC]
-
-* [Heroku]()
-
-* [UML]()
 
 ### Documentation
 
-Dependencies
-jest
-lint
-jsdoc
+* [JSDOC](index.html)
 
-Modules
+* [UML] <img src="./assets/lab_16_flow_diagram.jpg">
+
+#### Dependencies
+* jest
+
+* lint
+
+* jsdoc
+
+* Modules
 
 
 Exported Values and Methods
