@@ -2,6 +2,7 @@
 
 /**
 * event emmitter
+* @module event
 * @file events/event.js
  */
 
