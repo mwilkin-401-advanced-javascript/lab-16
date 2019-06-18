@@ -16,7 +16,7 @@ const events = require('./event.js');
 
 function log(event, payload){
   let logTime = new Date();
-  console.log({event: event.upperCase(), logTime , payload});
+  console.log({event, logTime , payload});
 }
 
 

@@ -1,8 +1,17 @@
 'use strict';
 
-
+/**
+ * events export
+ * @type {Object}
+ */
 
 module.exports = exports = {};
+
+/**
+ * read file mock
+ * @type {Object}
+ * @desc mocking reading a bad file
+ */
 
 exports.readFile = (file, cb) => {
   if(file.match(/bad/i)){
@@ -12,8 +21,16 @@ exports.readFile = (file, cb) => {
   }
 };
 
-exports.writeFile = (file) => {
+/**
+ * write file mock
+ * @type {Object}
+ * @desc mocking writing a bad file
+ */
+
+exports.writeFile = (file, buffer, cb) => {
   if(file.match(/bad/i)){
-    return Buffer.from('File Contents');
+    cb('Invalid file');
+  } else {
+    cb(undefined, Buffer.from('File Contents'));  
   }
 };
