@@ -17,6 +17,9 @@
     "jest": "^23.6.0",
     "jsdoc": "^3.6.2"
   },
+  "jest": {
+    "testEnvironment": "node"
+  },
   "devDependencies": {},
   "repository": {
     "type": "git",
