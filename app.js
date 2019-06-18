@@ -51,13 +51,17 @@ function convertCase(data){
 
 
 function readFile(file) {
-  fs.readFile(file, (err, data) => {
-    if(err){
-      event.emit('error', 'readFile error', `${err}`);
-    }
-    event.emit('log', 'readFile', `${file} saved`);
-    data.toString();
+  return new Promise((resolve, reject) => {
+    fs.readFile(file, (err, data) => {
+      if(err){
+        event.emit('error', 'readFile error', `${err}`);
+      }
+      event.emit('log', 'readFile', `${file} saved`);
+      resolve(data.toString());
+    });
+
   });
+  
 }
 
 /**
@@ -68,11 +72,14 @@ function readFile(file) {
  */
 
 function writeFile(file, text) {
-  fs.writeFile(file, Buffer.from(text), (err, data) => {
-    if(err){
-      event.emit('error', 'writeFile error', `${err}`);
-    }
-    event.emit('log', 'writeFile', `${file} saved`);
+  return new Promise((resolve, reject) => {
+
+    fs.writeFile(file, Buffer.from(text), (err, data) => {
+      if(err){
+        event.emit('error', 'writeFile error', `${err}`);
+      }
+      resolve(event.emit('log', 'writeFile', `${file} saved`));
+    });
   });
 }
 

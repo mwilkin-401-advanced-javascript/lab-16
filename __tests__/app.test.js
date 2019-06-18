@@ -41,6 +41,10 @@ describe('readFile method', () => {
 
 describe('writeFile method', () => {
   it('should write a file', () => {
-
+    let fileToWrite = 'convertedFile.txt';
+    return writeFile(fileToWrite, (err, data) => {
+      expect(err).toBeUndefined();
+      expect(data).toEqual(Buffer.from(fileToWrite));
+    });
   });
 });
