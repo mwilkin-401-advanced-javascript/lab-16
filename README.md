@@ -1,6 +1,6 @@
 # Lab 16 Event Driven Applicaions
 
-[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-16.svg?branch=dev)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-04)
+[![Build Status](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-16.svg?branch=dev)](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-16)
 
 ### Author: Matt Wilkin
 
@@ -10,14 +10,14 @@ Create an event driven “smart app”
 
 ### Links and Resources
 
-* [Submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-04/pull/1)
+* [Submission PR](https://github.com/mwilkin-401-advanced-javascript/lab-16/pull/1)
 
-* [Travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-16)
+* [Travis](https://www.travis-ci.com/mwilkin-401-advanced-javascript/lab-16
 
 
 ### Documentation
 
-* [JSDOC](index.html)
+* [JSDOC] put `index.html` in an open web browser
 
 * [UML] <img src="./assets/lab_16_flow_diagram.jpg">
 
